@@ -1,7 +1,6 @@
-// for react-navigation
-import android.os.Bundle;
-
 package com.reactnativetesting
+
+import android.os.Bundle;
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
