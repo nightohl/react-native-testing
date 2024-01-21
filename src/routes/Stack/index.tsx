@@ -2,6 +2,7 @@ import {StackScreenProps, createStackNavigator} from '@react-navigation/stack';
 import React, {FC} from 'react';
 import {Test1Screen} from '../../screens/Test1';
 import {Test2Screen} from '../../screens/Test2';
+import {Test3Screen} from '../../screens/Test3';
 
 export type StackParams = {
   Test1: undefined;
@@ -25,7 +26,7 @@ export const Stack = () => {
     <Navigator>
       <Screen name="Test1" component={Test1Screen} />
       <Screen name="Test2" component={Test2Screen} />
-      <Screen name="Test3" component={Empty} />
+      <Screen name="Test3" component={Test3Screen} />
     </Navigator>
   );
 };

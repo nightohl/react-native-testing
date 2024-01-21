@@ -1,5 +1,12 @@
 import * as React from 'react';
-import {Text, View, FlatList, TouchableOpacity, StyleSheet} from 'react-native';
+import {
+  Text,
+  View,
+  FlatList,
+  TouchableOpacity,
+  StyleSheet,
+  Button,
+} from 'react-native';
 import {ScreenProps} from '../routes/Stack';
 
 export const Test1Screen: React.FC<ScreenProps<'Test1'>> = ({navigation}) => {
@@ -11,6 +18,7 @@ export const Test1Screen: React.FC<ScreenProps<'Test1'>> = ({navigation}) => {
 
   return (
     <View>
+      <Button title="goToTest3" onPress={() => navigation.navigate('Test3')} />
       <Text style={styles.header}>List of numbers from 1 to 20</Text>
       <FlatList
         keyExtractor={(_, idx) => `${idx}`}

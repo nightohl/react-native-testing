@@ -20,7 +20,7 @@ describe('Testing react navigation', () => {
     expect(items.length).toBe(10);
   });
 
-  test('clicking on one item takes you to the details screen', async () => {
+  test('clicking on one item takes you to the Test2 screen', async () => {
     jest.useFakeTimers();
 
     const component = (
